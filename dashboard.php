@@ -78,16 +78,16 @@
 						                
 							        </div><!--//col-->
 							        <div class="col-auto">
-								        <h4 class="app-card-title">Invoices</h4>
+								        <h4 class="app-card-title">Attachments</h4>
 							        </div><!--//col-->
 						        </div><!--//row-->
 						    </div><!--//app-card-header-->
 						    <div class="app-card-body px-4">
 							    
-							    <div class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet eros vel diam semper mollis.</div>
+							    <div class="intro">Add attachments to existing accounts & policies i.e. <strong>Business Registration docs</strong>, <strong>National ID's</strong>, <strong>Death Certificates</strong>. </div>
 						    </div><!--//app-card-body-->
 						    <div class="app-card-footer p-4 mt-auto">
-							   <a class="btn app-btn-secondary" href="#">Create New</a>
+							   <a class="btn app-btn-secondary" href="#">Upload Attachment</a>
 						    </div><!--//app-card-footer-->
 						</div><!--//app-card-->
 				    </div><!--//col-->
@@ -105,16 +105,16 @@
 						                
 							        </div><!--//col-->
 							        <div class="col-auto">
-								        <h4 class="app-card-title">Apps</h4>
+								        <h4 class="app-card-title">Performance Overview</h4>
 							        </div><!--//col-->
 						        </div><!--//row-->
 						    </div><!--//app-card-header-->
 						    <div class="app-card-body px-4">
 							    
-							    <div class="intro">Pellentesque varius, elit vel volutpat sollicitudin, lacus quam efficitur augue</div>
+							    <div class="intro">Business performance reports on Demand.</div>
 						    </div><!--//app-card-body-->
 						    <div class="app-card-footer p-4 mt-auto">
-							   <a class="btn app-btn-secondary" href="#">Create New</a>
+							   <a class="btn app-btn-secondary" href="#">Proceed</a>
 						    </div><!--//app-card-footer-->
 						</div><!--//app-card-->
 				    </div><!--//col-->
@@ -132,16 +132,16 @@
 						                
 							        </div><!--//col-->
 							        <div class="col-auto">
-								        <h4 class="app-card-title">Tools</h4>
+								        <h4 class="app-card-title">User Management</h4>
 							        </div><!--//col-->
 						        </div><!--//row-->
 						    </div><!--//app-card-header-->
 						    <div class="app-card-body px-4">
 							    
-							    <div class="intro">Sed maximus, libero ac pharetra elementum, turpis nisi molestie neque, et tincidunt velit turpis non enim.</div>
+							    <div class="intro">Add, Edit, De-activate system user accounts</div>
 						    </div><!--//app-card-body-->
 						    <div class="app-card-footer p-4 mt-auto">
-							   <a class="btn app-btn-secondary" href="#">Create New</a>
+							   <a class="btn app-btn-secondary" href="#">Proceed</a>
 						    </div><!--//app-card-footer-->
 						</div><!--//app-card-->
 				    </div><!--//col-->
