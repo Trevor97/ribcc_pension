@@ -23,7 +23,7 @@
 							</div><!--//form-group-->
 							<div class="password mb-3">
 								<label class="sr-only" for="signin-password">Password</label>
-								<input id="signin-password" name="signin-password" type="password" class="form-control signin-password" placeholder="Password" required="required">
+								<input id="signin-password" name="signin-password" type="password" class="form-control signin-password" placeholder="Password" required="required">								
 							</div><!--//form-group-->
 							<div class="text-center">
 								<button type="submit" class="btn app-btn-primary w-100 theme-btn mx-auto">Log In</button>
