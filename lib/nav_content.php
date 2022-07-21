@@ -205,16 +205,15 @@
                         <!--//nav-link-->
                     </li>
                     <!--//nav-item-->
-
                     <li class="nav-item has-submenu">
                         <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
-                        <a id="client_nav" class="nav-link submenu-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#client-submenu" aria-expanded="false" aria-controls="client-submenu">
+                        <a id="module_nav" class="nav-link submenu-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#module-submenu" aria-expanded="false" aria-controls="module-submenu">
                             <span class="nav-icon">
                                 <svg id="Layer_1" viewBox="0 0 25 25" fill="currentColor" width="20" height="20" class="bi bi-folder" fill="currentColor" data-name="Layer 1">
                                     <path d="m4 13h3v2h-3zm5 2h3v-2h-3zm-5 4h3v-2h-3zm5 0h3v-2h-3zm-5-12h3v-2h-3zm5 0h3v-2h-3zm-5 4h3v-2h-3zm5 0h3v-2h-3zm15-3v16h-24v-21a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v2h5a3 3 0 0 1 3 3zm-10-5a1 1 0 0 0 -1-1h-10a1 1 0 0 0 -1 1v19h12zm8 5a1 1 0 0 0 -1-1h-5v15h6zm-4 7h2v-2h-2zm0 4h2v-2h-2zm0-8h2v-2h-2z" />
                                 </svg>
                             </span>
-                            <span class="nav-link-text">Client</span>
+                            <span class="nav-link-text">Modules</span>
                             <span class="submenu-arrow">
                                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
@@ -223,66 +222,15 @@
                             <!--//submenu-arrow-->
                         </a>
                         <!--//nav-link-->
-                        <div id="client-submenu" class="collapse submenu submenu-1" data-bs-parent="#menu-accordion">
+                        <div id="module-submenu" class="collapse submenu submenu-1" data-bs-parent="#menu-accordion">
                             <ul class="submenu-list list-unstyled">
-                                <li class="submenu-item"><a class="submenu-link" href="register_client.php">Register Client</a></li>
-                                <li class="submenu-item"><a class="submenu-link" href="view_edit_clients.php">View/ Edit Existing Clients</a></li>
+                                <li class="submenu-item"><a class="submenu-link" href="#">Clients</a></li>
+                                <li class="submenu-item"><a class="submenu-link" href="#">Members</a></li>
+                                <li class="submenu-item"><a class="submenu-link" href="#">Dependants</a></li>
                             </ul>
                         </div>
                     </li>
-                    <!--//nav-item-->
-                    <li class="nav-item has-submenu">
-                        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
-                        <a id="member_nav" class="nav-link submenu-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#member-submenu" aria-expanded="false" aria-controls="member-submenu">
-                            <span class="nav-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" fill="currentColor" width="20" height="20">
-                                    <g id="_01_align_center" data-name="01 align center">
-                                        <path d="M21,24H19V18.957A2.96,2.96,0,0,0,16.043,16H7.957A2.96,2.96,0,0,0,5,18.957V24H3V18.957A4.963,4.963,0,0,1,7.957,14h8.086A4.963,4.963,0,0,1,21,18.957Z" />
-                                        <path d="M12,12a6,6,0,1,1,6-6A6.006,6.006,0,0,1,12,12ZM12,2a4,4,0,1,0,4,4A4,4,0,0,0,12,2Z" />
-                                    </g>
-                                </svg>
-                            </span>
-                            <span class="nav-link-text">Member</span>
-                            <span class="submenu-arrow">
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                                </svg>
-                            </span>
-                            <!--//submenu-arrow-->
-                        </a>
-                        <!--//nav-link-->
-                        <div id="member-submenu" class="collapse submenu submenu-1" data-bs-parent="#menu-accordion">
-                            <ul class="submenu-list list-unstyled">
-                                <li class="submenu-item"><a class="submenu-link" href="add_member.php">Add Member</a></li>
-                                <li class="submenu-item"><a class="submenu-link" href="view_edit_members.php">View/ Edit Existing Members</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <!--//nav-item-->
-                    <li class="nav-item has-submenu">
-                        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
-                        <a id="dependant_nav" class="nav-link submenu-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#dependant-submenu" aria-expanded="false" aria-controls="dependant-submenu">
-                            <span class="nav-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" fill="currentColor" width="20" height="20" class="bi bi-folder" fill="currentColor">
-                                    <path d="M6.349,11H3a1,1,0,0,0-1,1v3H0V12A3,3,0,0,1,3,9H7.537A5.977,5.977,0,0,0,6.349,11ZM21,9H16.463a5.977,5.977,0,0,1,1.188,2H21a1,1,0,0,1,1,1v3h2V12A3,3,0,0,0,21,9Zm-5,4a4,4,0,1,0-4,4A4,4,0,0,0,16,13Zm-2,0a2,2,0,1,1-2-2A2,2,0,0,1,14,13Zm4,8a3,3,0,0,0-3-3H9a3,3,0,0,0-3,3v3H8V21a1,1,0,0,1,1-1h6a1,1,0,0,1,1,1v3h2ZM22,4a4,4,0,1,0-4,4A4,4,0,0,0,22,4ZM20,4a2,2,0,1,1-2-2A2,2,0,0,1,20,4ZM10,4A4,4,0,1,0,6,8,4,4,0,0,0,10,4ZM8,4A2,2,0,1,1,6,2,2,2,0,0,1,8,4Z" />
-                                </svg>
-                            </span>
-                            <span class="nav-link-text">Dependant</span>
-                            <span class="submenu-arrow">
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                                </svg>
-                            </span>
-                            <!--//submenu-arrow-->
-                        </a>
-                        <!--//nav-link-->
-                        <div id="dependant-submenu" class="collapse submenu submenu-1" data-bs-parent="#menu-accordion">
-                            <ul class="submenu-list list-unstyled">
-                                <li class="submenu-item"><a class="submenu-link" href="add_dependant.php">Add Dependant</a></li>
-                                <li class="submenu-item"><a class="submenu-link" href="view_edit_dependants.php">View/ Edit Existing Dependant</a></li>
-                            </ul>
-                        </div>
-                    </li>
+                    
                     <!--//nav-item-->
                     <li class="nav-item has-submenu">
                         <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
