@@ -16,16 +16,6 @@
                     <div class="search-mobile-trigger d-sm-none col">
                         <i class="search-mobile-trigger-icon fas fa-search"></i>
                     </div>
-                    <!--//col-->
-                    <div class="app-search-box col">
-                        <form class="app-search-form">
-                            <div class="form-group">
-                                <input type="text" id="search" name="search" class="form-control search-input" placeholder="Search..."> 
-                                <div id="search-result"></div>
-                            </div>
-                        </form>
-                    </div>
-                    <!--//app-search-box-->
 
                     <div class="app-utilities col-auto">
                         <div class="app-utility-item app-notifications-dropdown dropdown">
@@ -204,13 +194,13 @@
                         </a>
                         <!--//nav-link-->
                     </li>
-                    <!--//nav-item-->
+                    <!--//modules nav item-->
                     <li class="nav-item has-submenu">
                         <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
                         <a id="module_nav" class="nav-link submenu-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#module-submenu" aria-expanded="false" aria-controls="module-submenu">
                             <span class="nav-icon">
-                                <svg id="Layer_1" viewBox="0 0 25 25" fill="currentColor" width="20" height="20" class="bi bi-folder" fill="currentColor" data-name="Layer 1">
-                                    <path d="m4 13h3v2h-3zm5 2h3v-2h-3zm-5 4h3v-2h-3zm5 0h3v-2h-3zm-5-12h3v-2h-3zm5 0h3v-2h-3zm-5 4h3v-2h-3zm5 0h3v-2h-3zm15-3v16h-24v-21a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v2h5a3 3 0 0 1 3 3zm-10-5a1 1 0 0 0 -1-1h-10a1 1 0 0 0 -1 1v19h12zm8 5a1 1 0 0 0 -1-1h-5v15h6zm-4 7h2v-2h-2zm0 4h2v-2h-2zm0-8h2v-2h-2z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
                                 </svg>
                             </span>
                             <span class="nav-link-text">Modules</span>
@@ -224,40 +214,43 @@
                         <!--//nav-link-->
                         <div id="module-submenu" class="collapse submenu submenu-1" data-bs-parent="#menu-accordion">
                             <ul class="submenu-list list-unstyled">
-                                <li class="submenu-item"><a class="submenu-link" href="#">Clients</a></li>
+                                <li class="submenu-item"><a class="submenu-link" id="clients_sub" href="clients.php">Clients</a></li>
                                 <li class="submenu-item"><a class="submenu-link" href="#">Members</a></li>
                                 <li class="submenu-item"><a class="submenu-link" href="#">Dependants</a></li>
                             </ul>
                         </div>
                     </li>
-                    
-                    <!--//nav-item-->
-                    <li class="nav-item has-submenu">
+
+                    <!--//claims nav item-->
+                    <li class="nav-item">
                         <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
-                        <a id="insurer_nav" class="nav-link submenu-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#insurer-submenu" aria-expanded="false" aria-controls="insurer-submenu">
+                        <a id="overview_nav" class="nav-link" href="#.php">
+                            <span class="nav-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-medical" viewBox="0 0 16 16">
+                                    <path d="M7.5 5.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L6 7l-.549.317a.5.5 0 1 0 .5.866l.549-.317V8.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L8 7l.549-.317a.5.5 0 1 0-.5-.866l-.549.317V5.5zm-2 4.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
+                                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                                </svg>
+                            </span>
+                            <span class="nav-link-text">Claims</span>
+                        </a>
+                        <!--//nav-link-->
+                    </li>
+
+                    <!--//insurer nav item-->
+                    <li class="nav-item">
+                        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+                        <a id="overview_nav" class="nav-link" href="#.php">
                             <span class="nav-icon">
                                 <svg id="Layer_1" viewBox="0 0 25 25" fill="currentColor" width="20" height="20" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
                                     <path d="m0 22h24v2h-24zm24-14.091v2.091h-3v8h2v2h-22v-2h2v-8h-3v-2.091a3 3 0 0 1 1.563-2.634l9-4.909a2.993 2.993 0 0 1 2.874 0l9 4.909a3 3 0 0 1 1.563 2.634zm-19 10.091h3v-8h-3zm5-8v8h4v-8zm9 0h-3v8h3zm3-2.091a1 1 0 0 0 -.521-.878l-9-4.909a1 1 0 0 0 -.958 0l-9 4.909a1 1 0 0 0 -.521.878v.091h20z" />
                                 </svg>
                             </span>
                             <span class="nav-link-text">Insurer</span>
-                            <span class="submenu-arrow">
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                                </svg>
-                            </span>
-                            <!--//submenu-arrow-->
                         </a>
                         <!--//nav-link-->
-                        <div id="insurer-submenu" class="collapse submenu submenu-1" data-bs-parent="#menu-accordion">
-                            <ul class="submenu-list list-unstyled">
-                                <li class="submenu-item"><a class="submenu-link" href="add_insurer.php">Add Insurer</a></li>
-                                <li class="submenu-item"><a class="submenu-link" href="account.html">View/ Edit Existing Insurer</a></li>
-                            </ul>
-                        </div>
                     </li>
-                    <!--//nav-item-->
-
+                
+                    <!--//help nav item-->
                     <li class="nav-item">
                         <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
                         <a id="" class="nav-link" href="charts.html">
