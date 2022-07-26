@@ -28,15 +28,15 @@
 								<div class="col-md-12">
 									<h1 class="heading-text"><strong>Add Beneficiary</strong></h1>
 								</div>
+							</div>
+							<div class="row">
 								<div class="col-md-12">
-									<label for="member-name">Member Name</label>
-									<select name="member-name" id="member-name" class="form-select">
-										<option disabled selected>- Select Employer -</option>
-										<?php
-											retrieveRegisteredMembers($connect);
-										?>
-									</select><br>
+									<label for="member-name"><strong>Member Name</strong></label>
+									<input type="text" name="member-name" id="member-name" class="form-control">
+									<br>
 								</div>
+							</div>
+							<div class="row">
 								<div class="col-md-3">
 										<label for="firstname"><strong>First Name</strong></label>
 										<input type="text" name="firstname" id="firstname" class="form-control"/>
@@ -50,6 +50,8 @@
 									<input type="text" name="maiden_name" id="maiden_name" class="form-control">
 									<br>
 								</div>
+							</div>
+							<div class="row">
 								<div class="col-md-6">
 									<label for="date_of_birth"><strong>Date of Birth</strong></label>
 									<input type="date" name="date_of_birth" id="date_of_birth" class="form-control">
@@ -72,11 +74,15 @@
 									</select>
 									<br>
 								</div>
+							</div>
+							<div class="row">
 								<div class="col-md-12">
 									<label for="permanent_home_address"><strong>Permanent Home Address</strong></label>
 									<input type="text" name="permanent_home_address" id="permanent_home_address" class="form-control">
 									<br>
 								</div>
+							</div>
+							<div class="row">
 								<div class="col-md-4">
 									<label for="nationality"><strong>Nationality</strong></label>
 									<input type="text" name="nationality" id="nationality" class="form-control">
@@ -94,11 +100,15 @@
 									<input type="text" name="id_number" id="id_number" class="form-control">
 									<br>
 								</div>
+							</div>
+							<div class="row">
 								<div class="col-md-12">
 									<label for="occupation"><strong>Occupation</strong></label>
 									<input type="text" name="occupation" id="occupation" class="form-control">
 									<br>
 								</div>
+							</div>
+							<div class="row">
 								<div class="col-md-6">
 									<label for="salary_per_annum"><strong>Salary Per Annum</strong></label>
 									<input type="number" name="salary_per_annum" id="salary_per_annum" class="form-control">
@@ -108,6 +118,8 @@
 									<input type="date" name="date_of_entry" id="date_of_entry" class="form-control">
 									<br>
 								</div>
+							</div>
+							<div class="row">
 								<div class="col-md-3">
 									<label for="phone_number"><strong>Phone Number</strong></label>
 									<input type="tel" name="phone_number" id="phone_number" class="form-control">
@@ -121,7 +133,8 @@
 									<input type="text" name="postal_address" id="postal_address" class="form-control">
 									<br>
 								</div>
-								
+							</div>
+							<div class="row">
 								<div class="col-md-4 offset-md-4 space-top">
 									<button type="submit" class="btn btn-success white-text w-100">Save</button>
 								</div>
