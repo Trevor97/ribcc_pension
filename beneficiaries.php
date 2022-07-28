@@ -166,7 +166,7 @@
 
 		function get_text(event){
 			var string = event.textContent;
-			document.getElementsByName('search_result')[0].value = string;
+			document.getElementsByName('member_name')[0].value = string;
 
 			document.getElementById('search_result').innerHTML = '';
 		}
