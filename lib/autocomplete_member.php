@@ -15,9 +15,15 @@
         
         $replace_string = '<b>'.$condition.'</b>';
 
+        
         foreach($query as $row){
+            $query01 = mysqli_query($connect, "SELECT organization_name FROM tbl_client_details WHERE client_id = ".$row['employer_id']."");
+
+            while($rowss = mysqli_fetch_assoc($query01)){
+                $employer_name = $rowss['organization_name'];
+            }
             $data[] = array(
-                'member_name' => str_ireplace($condition, $replace_string, $row["firstname"]." ".$row["lastname"]." - ".$row['employer_id']) 
+                'member_name' => str_ireplace($condition, $replace_string, $row["firstname"]." ".$row["lastname"]." - ".$employer_name) 
             );
         }
         
