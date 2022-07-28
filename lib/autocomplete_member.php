@@ -8,8 +8,7 @@
 
         $query = mysqli_query($connect,"SELECT firstname, lastname, employer_id 
                                         FROM tbl_member_details
-                                        WHERE firstname LIKE '%".$condition."%'
-                                        OR lastname LIKE '%".$condition."%'
+                                        WHERE (firstname LIKE '%".$condition."%' OR lastname LIKE '%".$condition."%')
                                         ORDER BY firstname ASC
                                         LIMIT 10");
         

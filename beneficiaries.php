@@ -39,102 +39,47 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-3">
-										<label for="firstname"><strong>First Name</strong></label>
-										<input type="text" name="firstname" id="firstname" class="form-control"/>
-								</div>
-								<div class="col-md-3">
-									<label for="last_name"><strong>Last Name</strong></label>
-									<input type="text" name="last_name" id="last_name" class="form-control">
+								<div class="col-md-6">
+									<label for="first_name"><strong>Firstname</strong></label>
+									<input type="text" name="first_name" id="first_name" class="form-control"/>
 								</div>
 								<div class="col-md-6">
-									<label for="maiden_name"><strong>Maiden Name</strong></label>
-									<input type="text" name="maiden_name" id="maiden_name" class="form-control">
+									<label for="last_name"><strong>Last Name</strong></label>
+									<input type="text" name="last_name" id="last_name" class="form-control"/>
 									<br>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<label for="date_of_birth"><strong>Date of Birth</strong></label>
-									<input type="date" name="date_of_birth" id="date_of_birth" class="form-control">
-								</div>
-								<div class="col-md-3">
-									<label for="gender"><strong>Gender</strong></label>
-									<select name="gender" id="gender" class="form-select">
-										<option value="Male">Male</option>
-										<option value="Female">Female</option>
-										<option value="Other">Other</option>
-									</select>
-								</div>
-								<div class="col-md-3">
-									<label for="marital_status"><strong>Marital Status</strong></label>
-									<select name="marital_status" id="marital_status" class="form-select">
-										<option value="Single">Single</option>
-										<option value="Married">Married</option>
-										<option value="Divorced">Divorced</option>
-										<option value="Widowed">Widowed</option>
-									</select>
-									<br>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<label for="permanent_home_address"><strong>Permanent Home Address</strong></label>
-									<input type="text" name="permanent_home_address" id="permanent_home_address" class="form-control">
-									<br>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-4">
-									<label for="nationality"><strong>Nationality</strong></label>
-									<input type="text" name="nationality" id="nationality" class="form-control">
-								</div>
-								<div class="col-md-4">
-									<label for="id_type"><strong>ID Type</strong></label>
-									<select name="id_type" id="id_type" class="form-select">
-										<option value="National ID">National ID</option>
-										<option value="Passport">Passport</option>
-										<option value="Other">Other</option>
-									</select>
-								</div>
-								<div class="col-md-4">
-									<label for="id_number"><strong>ID Number</strong></label>
-									<input type="text" name="id_number" id="id_number" class="form-control">
-									<br>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<label for="occupation"><strong>Occupation</strong></label>
-									<input type="text" name="occupation" id="occupation" class="form-control">
-									<br>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-6">
-									<label for="salary_per_annum"><strong>Salary Per Annum</strong></label>
-									<input type="number" name="salary_per_annum" id="salary_per_annum" class="form-control">
+									<input type="date" name="date_of_birth" id="date_of_birth" class="form-control"/>
 								</div>
 								<div class="col-md-6">
-									<label for="date_of_entry"><strong>Date of Entry into Scheme</strong></label>
-									<input type="date" name="date_of_entry" id="date_of_entry" class="form-control">
-									<br>
+									<label for="relationship_to_member"><strong>Relationship to Member</strong></label>
+									<select name="last_name" id="relationship_to_member" class="form-select">
+										<option value="Husband">Husband</option>
+										<option value="Wife">Wife</option>
+										<option value="Son">Son</option>
+										<option value="Daughter">Daughter</option>
+										<option value="Grandfather">Grandfather</option>
+										<option value="Grandmother">Grandmother</option>
+										<option value="Cousin">Cousin</option>
+										<option value="Uncle">Uncle</option>
+										<option value="Nephew">Nephew</option>
+										<option value="Niece">Niece</option>
+										<option value="Aunt">Aunt</option>
+										<option value="Brother-in-law">Brother-in-law</option>
+										<option value="Sister-in-law">Sister-in-law</option>
+									</select><br>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-md-3">
-									<label for="phone_number"><strong>Phone Number</strong></label>
-									<input type="tel" name="phone_number" id="phone_number" class="form-control">
-								</div>
-								<div class="col-md-4">
-									<label for="email_address"><strong>Email Address</strong></label>
-									<input type="email" name="email_address" id="email_address" class="form-control">
-								</div>
-								<div class="col-md-5">
-									<label for="postal_address"><strong>Postal Address</strong></label>
-									<input type="text" name="postal_address" id="postal_address" class="form-control">
-									<br>
-								</div>
+							<div class="col-12">
+								<label for="address"><strong>Address</strong></label>
+								<textarea name="address" id="address" class="form-control"></textarea>
+							</div>
+							<div class="col-md-6">
+								<label for="proportion_benefit_payable"><strong>Proportion benefit payable (%)</strong></label>
+								<input type="number" min="1" max="100" name="proportion_benefit_payable" id="proportion_benefit_payable" class="form-control"/><br>
 							</div>
 							<div class="row">
 								<div class="col-md-4 offset-md-4 space-top">
