@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-    <title>Beneficiaries | Pension GLA System</title>
+    <title>Beneficiaries | Pension GLA System</title>	
 	<?php
 		/** head includes; css, meta etc */
 		include_once("lib/head_includes.php")
@@ -31,8 +31,9 @@
 							</div>
 							<div class="row">
 								<div class="col-md-12">
-									<label for="member-name"><strong>Member Name</strong></label>
-									<input type="text" name="member-name" id="member-name" class="form-control">
+									<label for="member_name"><strong>Member Name</strong></label>
+									<input type="text" name="member_name" id="member_name" onkeyup="javascript:load_data(this.value)" class="form-control">
+									<span id="search_result"></span>
 									<br>
 								</div>
 							</div>
@@ -163,12 +164,46 @@
 		/** set nav item active */
 		document.getElementById("overview_nav").classList.add('active');
 
-		/** auto update stat-cards */
-		// var auto_refresh = setInterval(
-		// 	function (){
-		// 		$('#client_count').load('').fadeIn("slow");
-		// 	}, 1000);
+		function get_text(event){
+			var string = event.textContent;
+			document.getElementsByName('search_result')[0].value = string;
 
+			document.getElementById('search_result').innerHTML = '';
+		}
+
+		function load_data(query){
+			if(query.length >0){
+				var form_data = new FormData();
+
+				form_data.append('query', query);
+
+				var ajax_request = new XMLHttpRequest();
+
+				ajax_request.open('POST', 'lib/autocomplete_member.php');
+
+				ajax_request.send(form_data);
+
+				ajax_request.onreadystatechange = function(){
+					if(ajax_request.readyState == 4 && ajax_request.status == 200){
+						var response = JSON.parse(ajax_request.responseText);
+
+						var html = '<div class="list-group">';
+							if(response.length > 0){
+								for(var count = 0; count < response.length; count++){
+									html += '<a href="#" class="list-group-item list-group-item-action" onclick="get_text(this)">'+response[count].member_name+'</a>';
+								}
+							}else{
+								html += '<a href="#" class="list-group-item list-group-item-action disabled">No Results Found</a>';
+							}
+						html += '</div>';
+
+						document.getElementById('search_result').innerHTML = html;
+					}
+				}
+			}else{
+				document.getElementById('search_result').innerHTML = '';
+			}
+		}
 	</script>
 </body>
 </html> 
