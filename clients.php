@@ -32,8 +32,8 @@
 							</span>
 						</button>
 						<ul class="dropdown-menu" aria-labelledby="user-dropdown-toggle">
-							<li><a class="dropdown-item" href="#">Add Client</a></li>
-							<li><a class="dropdown-item" href="#">Update/ View Client details</a></li>
+							<li><a class="dropdown-item" href="clients.php">Add Client</a></li>
+							<li><a class="dropdown-item" href="view_edit_clients.php">Update/ View Client details</a></li>
 						</ul>
 					</div>
 				</div>
