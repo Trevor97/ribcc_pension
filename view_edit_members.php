@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-    <title>Dashboard | Pension GLA System</title>
+    <title>View/ Edit Members | Pension GLA System</title>
 	<?php
 		/** head includes; css, meta etc */
 		include_once("lib/head_includes.php")
