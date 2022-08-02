@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-    <title>Dashboard | Pension GLA System</title>
+    <title>Members | Pension GLA System</title>
 	<?php
 		/** head includes; css, meta etc */
 		include_once("lib/head_includes.php")
@@ -20,7 +20,24 @@
 	?>
 
     <div class="app-wrapper">
-	<div class="container">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 offset-sm-7 space-top">
+					<div>
+						<button class="btn app-btn-primary w-100 theme-btn mx-auto" id="user-dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Quick Actions 
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+									<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+								</svg>
+							</span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="user-dropdown-toggle">
+							<li><a class="dropdown-item" href="members.php">Add Member</a></li>
+							<li><a class="dropdown-item" href="view_edit_members.php">Update/ View Member details</a></li>
+						</ul>
+					</div>
+				</div>
+			</div><!--//quick-action-row--> 
 		   <div class="col-md-8 offset-md-2">
 			   <div class="row space-top">						
 					<div class="card fixed-card-height">
@@ -131,7 +148,7 @@
 					</div>
 			   </div>
 		   </div>
-	   </div>
+	   	</div>
     </div><!--//app-wrapper-->    					
 
  
