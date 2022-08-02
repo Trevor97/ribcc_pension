@@ -22,7 +22,7 @@
     <div class="app-wrapper">
 		<div class="container">
 			<div class="row">
-				<div class="col-3 offset-9 space-top">
+				<div class="col-sm-3 offset-sm-7 space-top">
 					<div>
 						<button class="btn app-btn-primary w-100 theme-btn mx-auto" id="user-dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Quick Actions 
 							<span>
