@@ -73,13 +73,20 @@
 									</select><br>
 								</div>
 							</div>
-							<div class="col-12">
-								<label for="address"><strong>Address</strong></label>
-								<textarea name="address" id="address" class="form-control"></textarea>
+							<div class="row">
+								<div class="col-12">
+									<label for="address"><strong>Address</strong></label>
+									<textarea name="address" id="address" class="form-control"></textarea>
+								</div>
 							</div>
-							<div class="col-md-6">
-								<label for="proportion_benefit_payable"><strong>Proportion benefit payable (%)</strong></label>
-								<input type="number" min="1" max="100" name="proportion_benefit_payable" id="proportion_benefit_payable" class="form-control"/><br>
+							<div class="row">
+								<div class="col-md-6">
+									<label for="proportion_benefit_payable"><strong>Proportion benefit payable (%)</strong></label>
+									<input type="number" min="1" max="100" name="proportion_benefit_payable" id="proportion_benefit_payable" class="form-control"/><br>
+								</div>
+								<div class="col-md-6 space-top">
+									<span class="badge rounded-pill bg-danger text-dark space-top">Remaining % Share:</span>
+								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-4 offset-md-4 space-top">
